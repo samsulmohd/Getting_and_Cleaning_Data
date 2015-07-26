@@ -18,3 +18,7 @@ y <- rbind(train, test)
 
 #Merges all data by combining column
 alldata <- cbind(X, subject, y)
+
+
+##Save data to file
+write.table(alldata, file = "alldata.txt", row.names = FALSE)
