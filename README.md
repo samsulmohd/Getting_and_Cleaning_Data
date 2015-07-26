@@ -1,14 +1,17 @@
 # run_analysis.R 
 
 #1. Merges the training and the test sets to create one data set.
+bind by row train and test data for X
 train <- read.table("train/X_train.txt")
 test <- read.table("test/X_test.txt")
 X <- rbind(train, test)
 
+bind by row train and test data for subject
 train <- read.table("train/subject_train.txt")
 test <- read.table("test/subject_test.txt")
 subject <- rbind(train, test)
 
+bind by row train and test data for y
 train <- read.table("train/y_train.txt")
 test <- read.table("test/y_test.txt")
 y <- rbind(train, test)
