@@ -1,6 +1,4 @@
-# Getting_and_Cleaning_Data
-
-# run_analysis.R explanation
+# run_analysis.R 
 
 #1. Merges the training and the test sets to create one data set.
 train <- read.table("train/X_train.txt")
@@ -17,7 +15,6 @@ y <- rbind(train, test)
 
 Merges all data by combining column
 alldata <- cbind(X, subject, y)
-
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
