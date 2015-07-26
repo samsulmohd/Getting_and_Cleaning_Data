@@ -15,7 +15,7 @@ train <- read.table("train/y_train.txt")
 test <- read.table("test/y_test.txt")
 y <- rbind(train, test)
 
-#Merges all data by combining column
+Merges all data by combining column
 alldata <- cbind(X, subject, y)
 
 
